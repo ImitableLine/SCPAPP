@@ -1,0 +1,27 @@
+{
+  "name": "scpapp",
+  "version": "1.0.0",
+  "description": "SCP APP MERN",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install -- prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "David Davis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.1",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
